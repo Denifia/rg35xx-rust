@@ -40,23 +40,23 @@ cross build --target armv7-unknown-linux-musleabihf
 
 In your Windows Terminal
 
-```powershell
-# Navigate to where you cloned this repo
+```ps
+# Navigate to this cloned repo
 # e.g. "cd c:\Users\your-name\rg35xx-rust"
 
 # Navigate to the built app
 cd target\armv7-unknown-linux-musleabihf\debug
 
 # Copy it to the device
-path/to/adb.exe push --sync .\hellorust "/mnt/mmc/hellorust"
+\path\to\adb.exe push --sync .\hellorust "/mnt/mmc/hellorust"
 ```
 
 ## Run
 
 In your Windows Terminal
-```powershell
+```ps
 # Open a shell on your device
-path/to/adb.exe shell
+\path\to\adb.exe shell
 
 # Run the app
 /mnt/mmc/hellorust
